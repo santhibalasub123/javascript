@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>BMI calculation</title>
+    </head>
+    <body> 
+        <h1> harry bmi</h1></br>
+        
+       <p> Enter the weight value <input type="text" id="one"/></p><br/>
+       <p>Enter the hight valuse <input type="text" id="two"/></p><br/>
+        <button onClick="haribmi()">hari bmi</button></br>
+        <div>harry bmi:<span id="add"></span></div>
+        <h1> Salman bmi</h1>
+        <p> Enter the weight value <input type="text" id="one1"/></p><br/>
+       <p>Enter the hight valuse <input type="text" id="two1"/></p><br/>
+        <button onClick="salbmi()">sal bmi</button></br>
+        <div>sal bmi:<span id="add1"></span></div>
+         <h1>comparision both bmi</h1>
+        <button onClick="comp()">who is higest</button></br> 
+        <div>sal & harry compar:<span id="aaa"></span></div>
+    
+
+    </body>
+    <script>
+        
+        var hariResult = 0;
+        var salResult = 0;
+        function haribmi(){
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            hariResult = (a/(b*b));
+            document.getElementById("add").innerHTML = hariResult;
+
+        } 
+        function salbmi(){
+            var a = document.getElementById("one1").value;
+            var b = document.getElementById("two1").value;
+            salResult = (a/(b*b));
+            document.getElementById("add1").innerHTML = salResult;
+
+        }
+         function comp()
+        {
+            if(hariResult === salResult) {
+                document.getElementById("aaa").innerHTML = "same";                
+                console.log(hariResult, salResult)
+            } else if (hariResult > salResult) {
+                document.getElementById("aaa").innerHTML = " hari ";               
+                console.log(hariResult, salResult)
+            } else if (hariResult < salResult) {
+                document.getElementById("aaa").innerHTML = "sal";               
+                console.log(hariResult, salResult)
+            }                 
+				
+         }
+    
+    </script>
+</html> 
