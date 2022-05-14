@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Find the Area of Triangle value</title>
+    </head>
+    <body> 
+        <h1> Area of Triangle</h1></br>
+        
+       <p> Enter the width value <input type="text" id="one"/></p><br/>
+       <p>Enter the hight valuse <input type="text" id="two"/></p><br/>
+        <button onClick="addition()">Area of triangle</button></br>
+        <div>Result of triangle of area:<span id="add"></span></div>
+    </body>
+    <script>
+        function addition(){
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result = 1/2*(Number(a)*Number(b));
+            document.getElementById("add").innerHTML = result;
+
+        }
+    
+    </script>
+</html> 

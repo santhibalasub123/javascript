@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADDITION</title>
+    </head>
+    <body>
+        <h1> ADDITION OF TWO NUMBER</h1>
+       <p> Enter the first value<input type="text" id="one"/></p><br/>
+
+       <P> Enter the Second value <input type="text" id="two"/></p></br></br>
+        <p><button onClick="addition()" style="background: rgb(199, 50, 50);">Add</button>
+        <div>Result:<span id="add"></span></div></p>
+    </body>
+    <script>
+        function addition(){
+            var a = document.getElementById("one").value;
+            var b = document.getElementById("two").value;
+            var result = Number(a)+Number(b);
+            document.getElementById("add").innerHTML = result;
+
+        }
+    
+    </script>
+</html> 

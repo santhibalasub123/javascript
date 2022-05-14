@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function swap(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=a;
+a=b;
+b=c;
+document.getElementById("answer1").value= a;
+document.getElementById("answer2").value= b;
+}
+</script>
+</head>
+<body>
+    <h1> SWapping two number</h1><br>
+ Enter Value of a: <input id="first">
+ Enter Value of b: <input id="second"></br></br>
+<button onclick="swap()" style="background-color: darkorange;">SwapPing</button></br></br>
+Swap Value of a: <input id="answer1">
+Swap Value of b: <input id="answer2">
+</body>
+
+</html>

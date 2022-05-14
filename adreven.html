@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<script>
+var a, temp;
+function fun()
+{
+  a= parseInt(document.getElementById("a").value);
+  if(a)
+  {
+    temp = document.getElementById("Para");
+   temp.style.display = "block";
+    if(a%2==0)
+      document.getElementById("res").innerHTML = "Even";
+    else
+      document.getElementById("res").innerHTML = "Odd";
+  }
+}
+</script>
+</head>
+<body>
+ <h1> ADD OR EVEN NUMBER CHECKING</h1>
+<p>Enter the Number: <input id="a"></br></br><button onclick="fun()" style="background-color: blue;">Check</button></p></br>
+<p id="Para" style="display:none;">It is an <span id="res"></span> Number</p>
+
+</body>
+</html>
