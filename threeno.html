@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>ADDITION</title>
+    </head>
+    <body>
+        <h1> Find the biggest number</h1></br>
+        <p> Enter the first value    :<input type="text" id="one"></p>
+        <p> Enter the Second value    :<input type="text" id="two"></p>
+        <p> Enter the Third value      :<input type="text" id="three"/></p></br>
+         <p><button onClick="addition()" style="background-color: #2aa53a;">biggest</button>
+        Result of biggest value :<span id="add"></span></p>
+    </body>
+    <script>
+        function addition(){
+            var num1, num2, num3;
+				num1 = Number(document.getElementById("one").value);
+				num2 = Number(document.getElementById("two").value);
+				num3 = Number(document.getElementById("three").value);
+                  if(num1>num2 && num1>num3)
+				{
+				 document.getElementById("add").innerHTML=num1;
+                  
+				}
+				else if(num2>num1 && num2>num3)
+				{
+					document.getElementById("add").innerHTML=num2;
+                   
+				}
+				
+                else if(num3>num1 && num3>num1)
+				{
+					document.getElementById("add").innerHTML=num3;
+                   
+				}
+				}
+		
+		</script>
+        
+    
+    </html> 
