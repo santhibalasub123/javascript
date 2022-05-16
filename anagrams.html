@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        find the anagrams
+    </title>
+</head>
+
+<body>
+    <script>
+        var a = "salman";
+        var b = "name";
+        var len1 = a.length;
+        var len2 = b.length;
+           if (len1 !== len2) {
+  console.log("Invalid Input");
+    return false;
+      }
+        var str1 = a.split('').sort().join('');
+        var str2 = b.split('').sort().join('');
+        if (str1 === str2) {
+            console.log("True");
+        } else {
+            console.log("False");
+        }
+
+    </script>
+</body>
+
+</html>
