@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chunks of array </title>
+    </head>
+</html>
+<script>
+var no = [33,44,20,10];
+var chunk = []
+var size = 2;
+
+for (var i = 0;  i < no.length; i += size) {
+  chunk.push(no.slice(i, i + size))
+}
+console.log(chunk)
+</script>
+</body>
+</html>
