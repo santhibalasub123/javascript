@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        printing maximum no of characher
+    </title>
+</head>
+
+<body>
+<script>
+
+    var exp = 'programmming' ;
+var expCounts = {};
+var maxKey = '';
+for(var i = 0; i < exp.length; i++)
+{
+    var key = exp[i];
+    if(!expCounts[key]){
+     expCounts[key] = 0;
+    }
+    expCounts[key]++;
+    if(maxKey == '' || expCounts[key] > expCounts[maxKey]){
+        maxKey = key;
+    }
+}
+
+console.log(maxKey + ":" + expCounts[maxKey]);
+    
+    //     var st = "programmming";
+    //     var ch = st.charAt(0);
+    //     for (var i = 1; i<st.length(); i++)
+    //      {
+
+    //         if (ch == st.charAt(i)) 
+    //         {
+    //             console.log(ch);
+    //             break;
+    //         }
+    //     }
+    //     //console.log(temparry[i]); -->
+    </script>
+</body>
+
+</html>
