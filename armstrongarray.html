@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         Armstrong number
+      </title>
+      </head>
+      <body>
+      <script>        
+            
+            var no=[221,453,1634,153,370,,45,407];
+            var arm = 0;  
+                                 
+            for (var i = 0; i < no.length; i++)
+            {
+                var sum = 0;
+            var number =  no[i];
+
+            var temp = number;
+           // console.log(temp);
+            while (temp > 0) {
+              
+                var remainder = temp % 10;
+
+              sum += remainder * remainder * remainder;
+              
+                temp = parseInt(temp / 10); 
+            }
+       
+            if (sum == number) {
+               
+              //console.log(number);
+              console.log(no[i]);
+            }
+            else {
+               // console.log(no[i]);
+              //return 0;
+            }       
+            }
+      </script>
+   </body>
+   
+</html>

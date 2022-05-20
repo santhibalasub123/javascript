@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> polindram </title>
+</head>
+
+<body>
+    <script>
+
+        function palindrome(arr, n) {
+
+            var flag = 0;
+
+            for (var i = 0; i <= n / 2 && n != 0; i++) 
+            {
+
+                if (arr[i] != arr[n - i - 1]) {
+                    flag = 1;
+                    break;
+                }
+            }
+        
+
+            if (flag == 1)
+
+               console.log(arr[i]);
+                 
+        }
+      //console.log(arr[i]);
+
+       var arr = [22,77, 3, 4, 21, 45, 34];
+        var n = arr.length;
+
+        palindrome(arr, n);
+
+
+
+    </script>
+</body>
+
+</html>
